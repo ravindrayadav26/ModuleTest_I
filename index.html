@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ModuleTest_I</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="heading">
+		<!-- This is a Heading including Name & Scores -->
+		<header>
+			<div class="gameName">ROCK PAPER SCISSORS</div>
+			<div class="gameScore">
+				<div class="score">
+					<p>COMPUTER<br>SCORE</p>
+					<!-- Computer Score  -->
+					<span id="compScore"></span>
+				</div>
+				<div class="score">
+					<p>YOUR<br>SCORE</p>
+					<!-- User Score  -->
+					<span id="myScore"></span>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<main class="playGame">
+		<!-- Selecting between Rock, Paper & Scissors -->
+		<div class="choose" id="choose">
+			<div class="chooseImage rock" onclick="start('rock')">
+				<img src="./vectors/stone.svg" alt="Rock Image" />
+			</div>
+			<div class="chooseImage paper" onclick="start('paper')">
+				<img src="./vectors/paper.svg" alt="Paper Image" />
+			</div>
+			<div class="chooseImage scissor" onclick="start('scissor')">
+				<img src="./vectors/scissor.svg" alt="scissor Image" />
+			</div>
+		</div>
+
+		<div class="results" id="results">
+			<!-- Declaring the winner -->
+			<div class="resultshow">
+				<div class="iClicked" id="iClicked">
+					<img src="./vectors/stone.svg" alt="Rock Image" id="userChoosed" />
+				</div>
+				<div class="result" id="result">
+					<h1 id="win">YOU WIN</h1>
+					<h1 id="tie">AGAINST PC</h1>
+					<button onclick="playagain()">PLAY AGAIN</button>
+				</div>
+				<div class="compChoose" id="compChoose">
+					<img src="./vectors/scissor.svg" alt="Scissor Image" id="loadingDone" />
+					<img src="./vectors/stone.svg" alt="Rock Image" id="loading" />
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="RNbuttons">
+		<!-- This are two buttons for Rules & Next with effect -->
+		<div class="button ripple" id="rule" onclick="closeRules()">RULES</div>
+		<a href="win.html" class="button ripple" id="next">NEXT</a>
+	</div>
+
+	<div id="gameRules">
+		<!-- This is Game Rules Section -->
+		<h1>Game Rules</h1>
+
+		<ul>
+			<li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+			<li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+				scissors.”</li>
+			<li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+			<li>If both players lay down the same hand, each player lays down another hand</li>
+		</ul>
+
+		<div id="closeRules" onclick="closeRules()">X</div>
+		<!-- This is close button -->
+	</div>
+
+	<script src="script.js"></script><!-- JavaScript -->
+</body>
+
+</html>

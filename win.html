@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModuleTest_I</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="win">
+        <div class="trophy">
+            <div class="trophyImg">
+                <img src="./vectors/trophy.svg"><!-- Trophy Image -->
+            </div>
+            <div class="stars">
+                <!-- Glittering Stars -->
+                <img src="./vectors/star.svg" alt="" class="star1">
+                <img src="./vectors/star.svg" alt="" class="star2">
+                <img src="./vectors/star.svg" alt="" class="star3">
+                <img src="./vectors/star.svg" alt="" class="star4">
+                <img src="./vectors/star.svg" alt="" class="star5">
+                <img src="./vectors/star.svg" alt="" class="star6">
+                <img src="./vectors/star.svg" alt="" class="star7">
+                <img src="./vectors/star.svg" alt="" class="star8">
+                <img src="./vectors/star.svg" alt="" class="star9">
+            </div>
+        </div>
+        <h1 class="hurray">HURRAY!!<br>YOU WON THE GAME</h1>
+        <h1 class="wonGame"></h1>
+        <div class="results" id="result">
+            <button onclick="playagain()">
+                <a href="index.html">PLAY AGAIN</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="RNbuttons">
+        <div class="button ripple" id="rule" onclick="closeRules()">RULES</div>
+    </div>
+
+    <!-- Rules for Rock Paper Scissors -->
+    <div id="gameRules">
+        <h1>Game Rules</h1>
+
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+
+        <div id="closeRules" onclick="closeRules()">X</div>
+        <!-- Close button -->
+    </div>
+
+    <script src="script.js"></script><!-- JavaScript -->
+</body>
+
+</html>
